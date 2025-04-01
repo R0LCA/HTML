@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .left h1 {
+            margin-left: 10px;
+        }
+
+        .center {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html"><img src="logo.png" alt="LOGO NO DISPONIBLE" width="80"></a>
+        </div>
+        <div class="center">
+            <h2>Contacto</h2>
+        </div>
+        <nav>
+            <a href="presentacion.html">Presentacion</a>
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Tienda</a>
+            <a href="pagina2.html">Comparación</a>
+            <a href="pagina3.html">Presupuesto</a>
+            <a href="pagina4.html">Contacto</a>
+            <a href="pagina5.html">¿Quienes somos?</a>
+            <a href="pagina6.html">¿Donde estamos?</a>
+            <a href="pagina7.html">FAQ</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <form action="procesamiento_formulario.php" method="post">
+                <fieldset>
+                    <legend>
+                        <h3>Datos personales</h3>
+                    </legend>
+                    <p>Nombre: <input type="text" name="nombre" required></p>
+                    <p>Apellidos: <input type="text" name="apellidos" required></p>
+                    Sexo: <input type="radio" name="opciones" value="h"> Hombre
+                    <input type="radio" name="opciones" value="m">Mujer
+                    <p>Telefono: <input type="tel" name="tlf" pattern="[0-9]{9}" required></p>
+                    <p>Correo <input type="email" name="correo" required></p>
+                    <p>Provincia:
+                        <select name="provincia">
+                            <option value="almeria">Almería</option>
+                            <option value="cadiz">Cádiz</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="granada">Granada</option>
+                            <option value="huelva">Huelva</option>
+                            <option value="jaen">Jaén</option>
+                            <option value="malaga" selected>Málaga</option>
+                            <option value="sevilla">Sevilla</option>
+                        </select>
+                    <p><input type="checkbox" checked name="1"> Deseo recibir infromacion sobre novedades y ofertas</p>
+                </fieldset>
+                </p>
+                <fieldset>
+                    <legend>
+                        <h3>Consulta</h3>
+                    </legend>
+                    Motivo del contacto:
+                    <p><textarea name="comentario" rows="10" cols="40" maxlength="300"></textarea></p>
+                </fieldset>
+                <p><input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </p>
+                <audio src="playa_2.mp3" loop autoplay controls></audio>
+        </section>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <a href="https://www.youtube.com/"><img src="youtube.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.instagram.com/"><img src="instagram.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.whatsapp.com/"><img src="was.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.twitter.com/"><img src="twitter.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+        </p>
+    </footer>
+</body>
+
+</html>

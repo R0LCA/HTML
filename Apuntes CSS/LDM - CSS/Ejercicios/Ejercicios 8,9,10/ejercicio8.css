@@ -1,0 +1,43 @@
+h1{
+    width: 300px;
+    border: 3px blue;
+    border-style: solid;
+}
+
+p{
+    width: 300px;
+}
+
+ .pregunta1, .pregunta2 {
+    color: white;
+    font-weight: bold;
+}
+
+h1 + p{
+    background-color: gray;
+}
+
+.pregunta2{
+    background-color: black;
+}
+
+.respuesta{
+    font-weight: bold;
+    color: red;
+}
+
+#correcta{
+    color:green
+}
+
+.pasos {
+    background-color: cyan;
+}
+
+
+
+
+
+p > a {
+    color: red;
+}

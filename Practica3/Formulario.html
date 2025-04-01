@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="registro.php" method="post">
+        <fieldset>
+            <legend>Información personal</legend>
+            <p>Nombre:
+                <input type="text" name="nombre" size="20" required>
+            </p>
+            <p>Apellido:
+                <input type="text" name="apellido" size="20" required>
+            </p>
+            <p>Género:</p>
+            <input type="radio" name="genero" value="Masculino" required> Masculino <br>
+            <input type="radio" name="genero" value="Femenino" required> Femenino <br>
+            <input type="radio" name="genero" value="Otro" required> Otro 
+        </fieldset>
+        <fieldset>
+            <legend>Información de contacto</legend>
+            <p>Correo electrónico:
+                <input type="text" name="email" size="20" required>
+            </p>
+            <p>Número de teléfono:
+                <input type="text" name="telefono" size="20" required>
+            </p>
+            <p>Dirección:</p>
+            <textarea name="Direccion" rows="4" cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Información de la cuenta</legend>
+            <p>Nombre de usuario:
+                <input type="text" name="usuario" size="20" required>
+            </p>
+            <p>Contraseña:
+                <input type="password" name="contrasena" required>
+            </p>
+            <p>Confirmar contraseña:
+                <input type="password" name="confirmacionContrasena" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <p>Seleccionar un Color Favorito:
+                <select name="colorFavorito">
+                    <option value="Rojo">Rojo</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Amarillo">Amarillo</option>
+                </select>
+            </p>
+            <p>Acepto los Términos y Condiciones
+                <input type="checkbox" name="aceptarTerminos" value="yes">
+            </p>
+        </fieldset>
+        <input type="submit" value="Registrarse">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

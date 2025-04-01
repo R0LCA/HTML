@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apuntes T6</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <!-- Email -->
+            <p>
+                Email: 
+                <input type="email">
+            </p>
+            
+
+            <!-- URL-->
+            <p>
+                URL: 
+                <input type="url" name="enlace">
+            </p>
+
+            <!-- Fecha -->
+            <p>
+                Fecha:
+                <input type="date" name="fecha">
+            </p>
+
+            <!-- Hora -->
+            <p>
+                Hora:
+                <input type="time" name="hora">
+            </p>
+
+            <!-- Fecha y hora -->
+            <p>
+                Fecha y hora: 
+                <input type="datetime-local" name="fecha_hora">
+            </p>
+
+            <!-- Numero -->
+            <p>
+                Numero:
+                <input type="number" name="numero" min="0" max="100" step="5">
+            </p>
+
+            <!-- Rango -->
+            <p>
+                Rango: 
+                <input type="range" name="valor" min="0" max="10">
+            </p>
+
+            <!-- Color -->
+            <p>
+                Color:
+                <input type="color" name="color" value="#FF0000">
+            </p>
+
+            <!-- Multiple -->
+            <p>
+                <select name="colorFavorito" size="4" multiple>
+                    <option value="Rojo">Rojo</option>
+                    <option value="Amarillo">Amarillo</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                </select>
+            </p>
+
+            <!-- Patrones -->
+            <p>
+                Matricula:
+                <input type="text" pattern="[0-9]{4}[A-z]{3}" name="matricula">
+            </p>
+
+            <!-- Progreso -->
+            <p>
+                Progreso:
+                <progress value="75" max="100"></progress>
+            </p>
+            <p>
+                Meter:
+                <meter value="80" max="100" low="20"></meter>
+            </p>
+            <input type="submit" name="Enviar">
+        </form>
+
+    <!-- Etiquetas nuevas de Multimedia -->
+
+        <!-- Audio -->                                               <!-- Safari no soporta OGG-->
+        <audio src="Audio.mp3" type="audio/mp3" controls autoplay loop>
+            Audio no soportado
+        </audio>
+
+        <!-- Otra forma de Audio -->
+        <audio>
+            <source src="audio2.mp3" type="audio/mp3">
+            <source src="audio2.ogg" type="audio/ogg">
+            <source src="audio2.wav" type="audio/wav">
+            Audio no soportado
+        </audio>
+
+        <br>
+
+        <!-- Video -->
+        <video src="Video.mp4" type="video/mp4" controls muted poster="miniatura.jpg">
+            Video no soportado
+        </video>
+
+        <!-- Otra forma de Video -->
+        <video>
+            <source src="video2.mp4" type="audio/mp4">
+            <source src="video2.ogg" type="audio/ogg">
+            <source src="video2.webm" type="audio/webm">
+            Video no soportado
+        </video>
+
+        <br>
+        
+        <!-- Figure -->
+        <figure>
+            <img src="miniatura.jpg">
+            <figcaption> Texto de imagen</figcaption>
+        </figure>
+
+        <br>
+
+        <!-- Details & Sumary-->
+        <details>
+            <summary>¿De que trata esta pagina?</summary>
+            <p>Son apuntes de HTML del Tema 6</p>
+        </details>
+
+    </body>
+</html>

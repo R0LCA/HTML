@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <!-- Estructura de un formulario-->
+    <!-- Action: la pagina donde se envia / method: (get, post) como se envia la informacion-->
+    <form
+      action="registrardatos.php"
+      method="get"
+    >
+      <!-- Para ingresar el nombre / type: text / name: nombre / placeholder: texto que aparece dentro y luego se quita cuando escribes-->
+      Ingrese su nombre
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre"
+      />
+      <!-- Para ingresar la contraseña / type: password / name : nombre / required: rellenarlo obligatoriamente-->
+      <p>
+        Ingrese su clave
+        <input
+          type="password"
+          name="contraseña"
+          required
+        />
+      </p>
+
+      <!-- Área de texto para que el usuario pueda escribir comentarios -->
+      <textarea
+        name="Comentarios"
+        cols="40"
+        rows="10"
+        autofocus
+      ></textarea>
+      <!-- 
+  Atributos:
+  - name="Comentarios": Nombre del campo que se usará al enviar el formulario.
+  - cols="40" y rows="10": Define el tamaño visible del área de texto (columnas y filas).
+  - autofocus: Coloca automáticamente el cursor en este campo cuando se carga la página.
+-->
+
+      <!-- Cada checkbox representa una opción seleccionable -->
+      <fieldset>
+        <legend>Lenguajes de Programación</legend>
+        <!-- Checkbox para Java -->
+        <input
+          type="checkbox"
+          name="lenguajes"
+          value="Java"
+        />Java<br />
+        <!-- Checkbox para C++ -->
+        <input
+          type="checkbox"
+          name="lenguajes"
+          value="C++"
+        />C++<br />
+        <!-- Checkbox para C -->
+        <input
+          type="checkbox"
+          name="lenguajes"
+          value="C"
+        />C<br />
+        <!-- Checkbox para C# -->
+        <input
+          type="checkbox"
+          name="lenguajes"
+          value="CSharp"
+        />C#<br />
+      </fieldset>
+      <!-- 
+  Notas:
+  - Todos los checkboxes tienen el mismo atributo name="lenguajes", lo que los agrupa.
+  - El valor asociado (value) se enviará si el checkbox está marcado.
+  - El uso de <fieldset> y <legend> organiza visualmente esta sección.
+-->
+
+      <p>Seleccione su nivel de experiencia en videojuegos:</p>
+      <!-- Botón de radio para "Principiante" -->
+      <input
+        type="radio"
+        name="experiencia"
+        value="1"
+      />Principiante<br />
+      <!-- 
+  Atributos:
+  - type="radio": Define que este elemento es un botón de opción (radio button).
+  - name="experiencia": Agrupa todas las opciones. Solo una de ellas puede ser seleccionada dentro del mismo grupo.
+  - value="1": Valor que se enviará al servidor si este botón está seleccionado.
+-->
+
+      <!-- Botón de radio para "Intermedio" -->
+      <input
+        type="radio"
+        name="experiencia"
+        value="2"
+      />Intermedio<br />
+      <!-- Misma estructura que el anterior, con un valor diferente ("2"). -->
+
+      <!-- Botón de radio para "Avanzado" -->
+      <input
+        type="radio"
+        name="experiencia"
+        value="3"
+      />Avanzado<br />
+      <!-- Misma estructura que los anteriores, con un valor diferente ("3"). -->
+
+      <!-- Botón de radio para "Profesional" -->
+      <input
+        type="radio"
+        name="experiencia"
+        value="4"
+      />Profesional<br />
+      <!-- Misma estructura que los anteriores, con un valor diferente ("4"). -->
+
+      <p>
+        Seleccione su género musical favorito:
+        <select name="generos">
+          <!-- Opciones disponibles en el menú desplegable -->
+          <option value="1">Rock</option>
+          <option
+            value="2"
+            selected
+          >
+            Pop
+          </option>
+          <option value="3">Jazz</option>
+          <option value="4">Reguetón</option>
+          <option value="5">Clásica</option>
+          <option value="6">Hip-Hop</option>
+          <option value="7">Blues</option>
+          <option value="8">Electrónica</option>
+          <option value="9">Folk</option>
+        </select>
+      </p>
+      <!-- 
+Notas:
+- El menú ahora ofrece opciones relacionadas con géneros musicales.
+- El atributo name="generos" identifica este campo en el formulario.
+- La opción "Pop" está seleccionada por defecto gracias a "selected".
+-->
+
+      <!-- Botón para restablecer el formulario -->
+      <input
+        type="reset"
+        name="borrar"
+        value="Borrar"
+      />
+      <!-- 
+  Atributos:
+  - type="reset": Este botón restablece todos los campos del formulario a sus valores predeterminados.
+  - name="borrar": Nombre del botón, útil si se requiere capturarlo en algún procesamiento.
+  - value="Borrar": El texto que aparece en el botón.
+-->
+
+      <!-- Botón para enviar el formulario -->
+      <input
+        type="submit"
+        name="Enviar"
+      />
+      <!-- 
+  Atributos:
+  - type="submit": Este botón envía los datos del formulario al servidor.
+  - name="Enviar": Nombre del botón, útil si se requiere capturarlo en el procesamiento del formulario.
+-->
+    </form>
+  </body>
+</html>

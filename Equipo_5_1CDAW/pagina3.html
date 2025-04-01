@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        .left h1 {
+            margin-left: 10px;
+        }
+        .center {
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html"><img src="logo.png" alt="LOGO NO DISPONIBLE" width="80"></a>
+        </div>
+        <div class="center">
+            <h2>Presupuesto</h2>
+        </div>
+        <nav>
+            <a href="presentacion.html">Presentacion</a>
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Tienda</a>
+            <a href="pagina2.html">Comparación</a>
+            <a href="pagina3.html">Presupuesto</a>
+            <a href="pagina4.html">Contacto</a>
+            <a href="pagina5.html">¿Quienes somos?</a>
+            <a href="pagina6.html">¿Donde estamos?</a>
+            <a href="pagina7.html">FAQ</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <form action="presupuesto.php" method="get">
+            <fieldset>
+                <legend><b>Montaje de equipo</b></legend>
+                <p>
+                    <h4>Placa base</h4>
+                    <select name="placabase">
+                        <option></option>
+                        <option value="msi">MSI PRO B650 -S WIFI</option>
+                        <option value="asus">ASUS PRIME B650 PLUS</option>
+                        <option value="gigabyte">GIGABYTE B760</option>
+                    </select>
+                </p>
+                <p>
+                    <h4>Caja</h4>
+                    <select name="caja">
+                        <option></option>
+                        <option value="corsaircaja">Corsair 4000D Airflow</option>
+                        <option value="forgeoncaja">Forgeon Arcanite ARGB Mesh</option>
+                        <option value="tempest">Tempest Shade RGB</option>
+                    </select>
+                </p>
+                <p>
+                    Color: 
+                    <input type="color" name="colorcaja">
+                </p>
+                <p>
+                    <h4>RAM</h4>
+                    <select name="ram">
+                        <option></option>
+                        <option value="kingston">Kingston DDR4 2X16GB</option>
+                        <option value="forgeonram">Forgeon DDR5 2X16 RGB</option>
+                        <option value="corsairram">Corsair Vengeance DDR5 2X16 RGB</option>
+                    </select>
+                </p>
+                <p>
+                    <h4>Presupuesto</h4>
+                    <label for="rangoPrecio">Seleccion un rango de presupuesto: </label>
+                    <input type="range" id="rangoPrecio" name="rangoPrecio" min="0" max="1000" step="10" oninput="this.nextElementSibling.value = this.value + '€'">
+                    <output for="rangoPrecio">500</output>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Sistema operativo</b></legend>
+                <p>
+                    <input type="radio" name="so" value="windows">Windows
+                    <input type="radio" name="so" value="linux">Linux
+                    <input type="radio" name="so" value="mac">Mac
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Información personal</b></legend>
+                <p>
+                    Nombre: <input type="text" name="nombre" required>
+                </p>
+                <p>
+                    Email: <input type="email" name="email" required>
+                </p>
+                <p>
+                    Teléfono: <input type="tel" name="telefono" pattern="[0-9]{9}" required>
+                </p>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <a href="https://www.youtube.com/"><img src="youtube.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.instagram.com/"><img src="instagram.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.whatsapp.com/"><img src="was.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.twitter.com/"><img src="twitter.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+        </p>
+    </footer>
+</body>
+</html>

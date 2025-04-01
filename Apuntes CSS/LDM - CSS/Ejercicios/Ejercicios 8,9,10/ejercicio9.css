@@ -1,0 +1,43 @@
+*{
+    width: 600px;
+}
+
+.titulo{
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.general{
+    background-color: chocolate;
+    font-size: 1.5rem;
+}
+
+.general + p{
+    background-color: grey;
+    border: 3px  black solid; 
+}
+
+#p1, #p1 + p  em{
+    color: blue;
+}
+
+#p2, #p2 + p  em{
+    color: green;
+}
+
+#p3, #p3 + p  em{
+    color: yellow;
+}
+
+#p4, #p4 + p  em{
+    color: cyan;
+}
+
+#p5, #p5 + p  em{
+    color: white;
+}
+#p6, #p6 + p  em{
+    color: orange;
+}

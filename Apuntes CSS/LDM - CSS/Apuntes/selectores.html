@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tabla de Selectores CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      table {
+        width: 100%;
+        max-width: 1000px;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+      }
+
+      th {
+        background-color: #23c98190;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+
+      td:first-child {
+        font-weight: bold;
+        color: #000000;
+      }
+
+      code {
+        background-color: #eaf2fd;
+        border-radius: 5px;
+        font-family: monospace;
+        color: #000000;
+      }
+
+      .example {
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      /* Estilos para los ejemplos */
+      .universal * {
+        color: #ff5733; /* Naranja */
+      }
+      p {
+        color: #33ff57; /* Verde */
+      }
+      .Uno {
+        color: #3357ff; /* Azul */
+      }
+      #titulo {
+        font-size: 24px;
+        color: #ff33a1; /* Rosa */
+      }
+      ul li {
+        color: #a133ff; /* Morado */
+      }
+      h1,
+      p {
+        color: #33fff5; /* Cyan */
+      }
+      p > a {
+        color: #ff3333; /* Rojo */
+      }
+      p + div {
+        color: #33ff8c; /* Verde claro */
+      }
+      a[target] {
+        color: #ff8c33; /* Naranja claro */
+      }
+      a[target='_blank'] {
+        color: #ff3333; /* Rojo */
+      }
+      em.especial {
+        color: #8c33ff; /* Morado claro */
+      }
+
+      /* Hacer la tabla responsiva */
+      @media (max-width: 768px) {
+        table {
+          width: 100%;
+          display: block;
+          overflow-x: scroll; /* Asegura que la barra de desplazamiento siempre esté visible */
+          white-space: nowrap;
+        }
+
+        th,
+        td {
+          padding: 8px;
+        }
+
+        code {
+          font-size: 14px;
+        }
+
+        .example {
+          padding: 8px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Tabla de Selectores CSS</h2>
+    <table>
+      <tr>
+        <th>Tipo de Selector</th>
+        <th>Descripción</th>
+        <th>Ejemplo HTML</th>
+        <th>Ejemplo CSS</th>
+        <th>Ejemplo Visual</th>
+      </tr>
+      <tr>
+        <td>Selector universal</td>
+        <td>Selecciona todos los elementos HTML de la página.</td>
+        <td>
+          <code>
+            &lt;p&gt;Hola Mundo!&lt;/p&gt; <br />
+            &lt;div&gt;Estudio&lt;/div&gt;<br />
+            &lt;span&gt;DAW&lt;/span&gt;
+          </code>
+        </td>
+        <td><code>* { color: rojo; }</code></td>
+        <td>
+          <div class="example universal">
+            <p>Hola Mundo!</p>
+            <div>estudio</div>
+            <span>DAW</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Selector de etiqueta</td>
+        <td>
+          Selecciona todos los elementos HTML de la página.Si existen varias
+          etiquetas en el HTML que coinciden, el CSS se le aplicará a todos.
+        </td>
+        <td>
+          <code>
+            &lt;p&gt;Texto 1&lt;/p&gt; <br />
+            &lt;p&gt;Texto 2&lt;/p&gt; <br />
+            &lt;p&gt;Texto 3&lt;/p&gt;
+          </code>
+        </td>
+        <td><code>p { color: cian; }</code></td>
+        <td>
+          <p class="example">Texto 1</p>
+          <p class="example">Texto 2</p>
+          <p class="example">Texto 3</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Selector de clase</td>
+        <td>
+          Agrupa elementos para aplicar el mismo estilo CSS. <br />Pueden ser
+          etiquetas distintas.
+        </td>
+        <td>
+          <code>&lt;div class="Uno"&gt;Ejemplo 1&lt;/div&gt;</code><br />
+          <code>&lt;p class="Uno"&gt;Ejemplo 2&lt;/p&gt;</code>
+        </td>
+        <td><code>.Uno { color: azulMarino; }</code></td>
+        <td>
+          <div class="example Uno">Ejemplo 1</div>
+          <p class="example Uno">Ejemplo 2</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Selector de identificador (ID)</td>
+        <td>
+          Selecciona un único elemento con un ID específico. <br />
+          No pueden asistir 2 etiquetas con el mismo identificador.
+        </td>
+        <td><code>&lt;h1 id="titulo"&gt;Título&lt;/h1&gt;</code></td>
+        <td><code>#titulo { font-size: 24px; }</code></td>
+        <td>
+          <h1
+            class="example"
+            id="titulo"
+          >
+            Título
+          </h1>
+        </td>
+      </tr>
+      <tr>
+        <td>Selector descendiente</td>
+        <td>
+          Selecciona elementos que están dentro de otro elemento.
+          <hr />
+          <strong style="font-size: small"
+            >Separados por un espacio en blanco.</strong
+          >
+        </td>
+        <td>
+          <code>
+            &lt;ul&gt;<br />
+            &lt;li&gt;Elemento 1&lt;/li&gt; <br />
+            &lt;li&gt;Elemento 2&lt;/li&gt; <br />
+            &lt;li&gt;Elemento 3&lt;/li&gt; <br />
+            &lt;/ul&gt;
+          </code>
+        </td>
+        <td><code>ul li { color: malva; }</code></td>
+        <td>
+          <ul>
+            <li class="example">Elemento 1</li>
+            <li class="example">Elemento 2</li>
+            <li class="example">Elemento 3</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Agrupación de selectores</td>
+        <td>
+          Aplica el mismo estilo a varias etiquetas. <br />
+          <hr />
+          <strong style="font-size: small">
+            Las etiquetas se separan por comas ‘,’ .</strong
+          >
+        </td>
+        <td>
+          <code> &lt;h1&gt;Título&lt;/h1&gt; &lt;p&gt;Texto&lt;/p&gt; </code>
+        </td>
+        <td><code>h1, p { color: cian; }</code></td>
+        <td>
+          <h1 class="example">Título</h1>
+          <p class="example">Texto</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Selector de hijos</td>
+        <td>
+          Selecciona solo los elementos hijos directos de un contenedor. Solo al
+          primer hijo.
+          <hr />
+          <strong style="font-size: small">
+            Se utiliza el mayor que (>) .</strong
+          >
+        </td>
+        <td>
+          <code
+            >&lt;p&gt;<br />
+            &lt;a&gt;Enlace hijo directo&lt;/a&gt;<br />
+            &lt;a&gt;Enlace hijo NO directo&lt;/a&gt;<br />
+            &lt;/p&gt;</code
+          >
+        </td>
+        <td><code>p > a { color: rojo; }</code></td>
+        <td>
+          <p class="example">
+            <a href="#">Enlace hijo directo</a><br />
+            <a
+              href="#"
+              style="color: black"
+              >Enlace hijo NO directo</a
+            >
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>Selector adyacente o hermano</td>
+        <td>
+          Selecciona solo el elemento que está justo después de otro.
+          <hr />
+          <strong style="font-size: small">
+            Se indica con el signo más (+) .</strong
+          >
+        </td>
+        <td>
+          <code> &lt;p&gt;Texto&lt;/p&gt; &lt;div&gt;Caja&lt;/div&gt; </code>
+        </td>
+        <td><code>p + div { color: verde; }</code></td>
+        <td>
+          <p class="example">Texto</p>
+          <div class="example">Caja</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Selector de atributos</td>
+        <td>
+          Selecciona elementos con un atributo específico. <br />e puede acceder
+          a través del atributo o a través del atributo y el valor
+        </td>
+        <td>
+          <code>
+            &lt;a target="_blank"&gt;Enlace 1&lt;/a&gt; <br />
+            <hr />
+            &lt;a target="_self"&gt;Enlace 2&lt;/a&gt;
+          </code>
+        </td>
+        <td>
+          <code>
+            a[target] color: rojo; <br />
+            <hr />
+            a[target="_blank"] { color: naranja; }
+          </code>
+        </td>
+        <td>
+          <a
+            class="example"
+            target="_blank"
+            href="#"
+            >Enlace 1</a
+          >
+          <br />
+          <br />
+          <hr />
+          <br />
+          <a
+            class="example"
+            target="_self"
+            href="#"
+            >Enlace 2</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>Selectores combinados</td>
+        <td>Combinan distintos tipos de selectores.</td>
+        <td>
+          <code>
+            &lt;em class="especial"&gt;Texto 1 <br />
+            &lt;/em&gt;&lt;em&gt;Texto 2&lt;/em&gt;
+          </code>
+        </td>
+        <td><code>em.especial { color: morado; }</code></td>
+        <td>
+          <em class="example especial">Texto 1</em>
+          <br />
+          <em class="example">Texto 2</em>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Todos los párrafos*/
+        p {
+         font-family: Arial, sans-serif;
+         font-size: 16px;
+         line-height: 1.5;
+        }
+
+        /*Encabecado h1 contenido en main y encabezado h2 contenido en main*/
+        main h1, main h2 {
+         color: #336699;
+        }
+   
+        /*Todos los enlaces en la página*/
+        a{
+         text-decoration: none;
+         color: #CC3300;
+        }
+
+        /*Lista no ordenada dentro del div "lista"*/
+        div ul{
+          list-style-type: square;
+        }
+
+        /*Elementos "li" dentro de la lista con clase "destacado*/
+        .destacado li{
+          font-weight: bold;
+        }
+
+        /*Elemento button*/
+        button{
+          background-color: #FF9900;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Encabezado Principal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit nibh at felis.</p>
+        <h2>Subtítulo</h2>
+        <p>Phasellus eu velit sed lorem sodales egestas. Ut feugiat. <a href="#">Donec porttitor</a>, magna eu varius luctus.</p>
+      </main>
+      <div id="lista">
+        <h2>Lista de elementos destacados</h2>
+        <ul class="destacado">
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+        </ul>
+      </div>
+      <button>Registrarse</button>
+</body>
+</html>

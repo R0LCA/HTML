@@ -1,0 +1,22 @@
+#titulo{
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+}
+
+p{
+font-family: Arial, sans-serif;
+
+}
+
+#parrafo1{
+    color : blue;
+    text-align: left;
+}
+
+#parrafo2{
+    color: red;
+    text-align: right;
+}

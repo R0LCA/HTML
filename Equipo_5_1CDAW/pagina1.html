@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <style>
+         header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        .left h1 {
+            margin-left: 10px;
+        }
+        .center {
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            margin-left: 10px;
+        }
+        td {
+            padding: 15px;
+        }
+        .centrado{
+            text-align: center;
+        }
+        .precio {
+            font-weight: bold;
+            font-family: "Arial Black", "Impact", sans-serif;
+            font-size: 1.2em;
+            color: #2b8800;
+            text-align: center; 
+        }
+        tr th h4{
+            border: 2px solid #c2c2c2;
+            padding: 5px 20px;
+            display: inline-block;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html"><img src="logo.png" alt="LOGO NO DISPONIBLE" width="80"></a>
+        </div>
+        <div class="center">
+            <h2>Tienda</h2>
+        </div>
+        <nav>
+            <a href="presentacion.html">Presentacion</a>
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Tienda</a>
+            <a href="pagina2.html">Comparación</a>
+            <a href="pagina3.html">Presupuesto</a>
+            <a href="pagina4.html">Contacto</a>
+            <a href="pagina5.html">¿Quienes somos?</a>
+            <a href="pagina6.html">¿Donde estamos?</a>
+            <a href="pagina7.html">FAQ</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+        <table  style="border-collapse: collapse;">
+            <article>
+            <!-- PLACAS BASE -->
+            <tr>
+                <td colspan="3"><h2><u>Placas base</u></h2></td>
+            </tr>
+        
+            <tr>
+                <th>
+                    <h4 id="oferta1">MSI PRO B650 -S WIFI</h4>
+                </th>
+                <th>
+                    <h4>ASUS PRIME B650 PLUS</h4>
+                </th>
+                <th>
+                    <h4>GIGABYTE B760</h4>
+                </th>
+            </tr>
+            <!-- DESCRIPCIONES PLACAS BASE -->
+            <tr>
+                <td>
+                    <p><b>Descripción: <br></b>Placa base MSI AMD5, con soporte de procesador de hasta AMD RYZEN SERIES 9000</p>
+                </td>
+                <td>
+                    <p><b>Descripción: <br></b>La Asus PRIME B650-Plus es una placa base que está diseñada por expertos para ofrecer todo el potencial de los procesadores AMD Ryzen 7000, es una magnífica opción para construir tu nuevo PC con el mejor rendimiento.</p>
+                </td>
+                <td>
+                    <p><b>Descripción: <br></b>Base GIGABYTE están equipadas con una solución de energía mejorada, los últimos estándares de almacenamiento y una conectividad excepcional para permitir un rendimiento optimizado para juegos.</p>
+                </td>
+            </tr>
+            <!-- IMÁGENES PLACAS BASE-->
+            <tr>
+                <td class="centrado">
+                    <img src="1684-msi-pro-b650-s-wifi.jpg" alt="msib650" width="300" height="300">
+                </td>
+                <td class="centrado">
+                    <img src="118-asus-prime-b650-plus.jpg" alt="asusb650" width="300" height="300">
+                </td>
+                <td class="centrado">
+                    <img src="1881-gigabyte-b760m-d3hp-ddr4.jpg" alt="Gigabyte" width="300" height="300">
+                </td>
+            </tr>
+            <!-- PRECIOS PLACAS BASE -->
+            <tr>
+                <td class="precio"><p><s  style="color:red">200€</s> 160€</p></td>
+                <td class="precio"><p>209,99€</p></td>
+                <td class="precio"><p>179,99€</p></td>
+            </tr>
+            </article>
+
+            <article>
+            <!-- CAJAS -->
+            
+            <tr>
+                
+                <td colspan="3"><hr><h2><u>Cajas</u></h2></td>
+            </tr>
+            
+            <tr>
+                <th>
+                    <h4>Corsair 4000D Airflow</h4>
+                </th>
+                <th>
+                    <h4 id="oferta2">Forgeon Arcanite ARGB Mesh</h4>
+                </th>
+                <th>
+                    <h4>Tempest Shade RGB</h4>
+                </th>
+            </tr>
+            <!-- DESCRIPCIÓN CAJAS-->
+            <tr>
+                <td>
+                    <p><b>Descripción: <br></b>Corsair 4000D Airflow es un chasis ATX semitorre distintivo, optimizado para disponer de un elevado caudal de aire, con una sencilla gestión del cableado y dos ventiladores CORSAIR AirGuide de 120 mm incluidos para que la refrigeración sea excepcional.</p>
+                </td>
+                <td>
+                    <p><b>Descripción: <br></b>Caja Forgeon con frontal mallado, cristal templado, 4 ventiladores, accesorio para montaje.</p>
+                </td>
+                <td>
+                    <p><b>Descripción: <br></b>Caja Tempest con un diseño compacto, control, accesibilidad, 3 ventiladores y componentes optimizados.</p>
+                </td>
+            </tr>
+            <!-- IMÁGENES CAJAS -->
+            <tr>
+                <td class="centrado">
+                    <img src="1801-corsair-4000d-airflow-cristal-templado-usb-31-negra.jpg" alt="corsair" width="300" height="300">
+                </td>
+                <td class="centrado">
+                    <img src="cajaforgeon.jpg" alt="forgeon" width="300" height="300">
+                </td>
+                <td class="centrado">
+                    <img src="cajatempest.jpg" alt="tempest" width="300" height="300">
+                </td>
+            </tr>
+            <!-- PRECIOS CAJAS -->
+            <tr>
+                <td class="precio"><p>79,99€</p></td>
+                <td class="precio"><p><s  style="color:red">149€</s> 110€</p></td>
+                <td class="precio"><p>89,99€</p></td>
+            </tr>
+            </article>
+        
+            <article>
+            <!-- MEMORIAS RAM -->
+            <tr>
+                <td colspan="3"><hr><h2><u>Memorias RAM</u></h2></td>
+            </tr>
+        
+            <tr>
+                <th>
+                    <h4>Kingston DDR4 2X16GB</h4>
+                </th>
+                <th>
+                    <h4>Forgeon DDR5 2X16 RGB</h4>
+                </th>
+                <th>
+                    <h4 id="oferta3">Corsair Vengeance DDR5 2X16 RGB</h4>
+                </th>
+            </tr>
+            <!-- DESCRIPCIÓN MEMORIAS RAM-->
+            <tr>
+                <td>
+                    <p><b>Descripción: <br></b>La Kingston Fury DDR4 2x16GB es un kit de memoria RAM de 32GB (2x16GB) que ofrece alto rendimiento y estabilidad, ideal para gaming y tareas exigentes. Con una velocidad de hasta 3200 MHz, garantiza un rendimiento rápido y fluido.</p>
+                </td>
+                <td>
+                    <p><b>Descripción: <br></b>La Forgeon DDR5 2x16GB es un kit de memoria RAM de 32GB (2x16GB) diseñado para ofrecer un rendimiento superior en gaming y aplicaciones exigentes. Con velocidades de hasta 4800 MHz, proporciona una experiencia rápida y eficiente.</p>
+                </td>
+                <td>
+                    <p><b>Descripción: <br></b>La Corsair Vengeance DDR5 2x16GB RGB es un kit de memoria RAM de 32GB (2x16GB) con iluminación RGB personalizable, ideal para gaming y tareas intensivas. Con velocidades de hasta 5200 MHz, ofrece un rendimiento rápido y estilizado para tu PC.</p>
+                </td>
+            </tr>
+            <!-- IMÁGENES MEMORIAS RAM -->
+            <tr>
+                <td class="centrado">
+                    <img src="ramkingston.jpg" alt="ramkingston" width="300" height="300">
+                </td>
+                <td class="centrado">
+                    <img src="forgeonram.jpg" alt="forgeonram" width="300" height="300">
+                </td>
+                <td class="centrado">
+                    <img src="152-corsair-vengeance-rgb-ddr5-4800mhz-32gb-2x16gb-cl30.jpg" alt="ramcorsair" width="300" height="300">
+                </td>
+            </tr>
+            <!-- PRECIOS MEMORIAS RAM-->
+            <tr>
+                <td class="precio"><p>109,99€</p></td>
+                <td class="precio"><p>114,99€</p></td>
+                <td class="precio"><p><s style="color:red">180€</s> 119,99€</p></td>
+            </tr>
+            </article>
+        </table>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <a href="https://www.youtube.com/"><img src="youtube.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.instagram.com/"><img src="instagram.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.whatsapp.com/"><img src="was.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.twitter.com/"><img src="twitter.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+        </p>
+    </footer>
+</body>
+</html>

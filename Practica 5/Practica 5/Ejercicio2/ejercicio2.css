@@ -1,0 +1,33 @@
+h1, h2, h3 {
+    color: darkred;
+}
+
+#recomendamos {
+    font-style: italic;
+}
+
+.resaltado {
+    color: darkblue;
+    font-weight: bold;
+}
+
+ol .resaltado {
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+div>p {
+    text-indent: 15px;
+}
+
+h3+div {
+    border: blue solid;
+}
+
+#recomendamos+p+p {
+    font-weight: bold;
+}
+
+a[href="#top"] {
+    color: red;
+}

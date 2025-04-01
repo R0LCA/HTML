@@ -1,0 +1,65 @@
+/*el espacio es un descendiente, la coma es una "y"*/
+/*selector universal*/
+* {
+  color: blue;
+}
+
+/*selector de etiqueta*/
+h1 {
+  font-size: 50px;
+  color: red;
+}
+
+/*selector de clase*/
+.ClaseUno {
+  background-color: gray;
+}
+.ClaseDos {
+  background-color: yellow;
+}
+
+/*selector de identificador*/
+#parrafo1 {
+  border: black solid;
+}
+#parrafo2 {
+  border: red solid 5px;
+}
+
+/*selector descendiente*/
+ul li {
+  background-color: aquamarine;
+}
+
+/*agrupación de selectores*/
+h2,
+h3 {
+  border: green solid;
+}
+#parrafo1,
+#parrafo2 {
+  text-decoration: underline;
+}
+
+/*selector de hijos*/
+p a {
+  color: red;
+}
+p > a {
+  color: red;
+}
+
+/*selector adyacente o hermano*/
+p + div {
+  background-color: chocolate;
+}
+
+/*selector de atributos*/
+a[target='_self'] {
+  color: violet;
+}
+
+/*Combinar selectores*/
+/*Todos los párrafos contenidos en el id primero: #primero p{}   */
+/*Todos los elementos <em> con la clase "especial" en toda la página:  em.especial{}   */
+/*Todos los elementos <p> contenidos en la clase "normal":  .normal p{}     */

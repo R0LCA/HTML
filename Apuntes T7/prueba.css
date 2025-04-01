@@ -1,0 +1,17 @@
+body{
+    color:#00F; 
+    background-color: #CFC;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+}
+
+h1{
+    color: #F00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+}
+
+strong{
+    color: #123456;
+    font-size: 30px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- EJERCICIO 1 -->
+    <form action="registrardatos.php" method="post">
+        <p><input type="text" name="nombre"></p>
+        <p><input type="submit"></p>
+    </form>
+    <hr>
+
+    <!-- EJERCICIO 2 -->
+    <form action="registrardatos2.php" method="get">
+        <p>Ingrese su nombre:<input type="text" name="nombre" autofocus></p>
+        <p>Ingrese su clave:<input type="text" name="clave"></p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+    <hr>
+
+    <!-- EJERCICIO 3 -->
+    <form action="" method="post">
+        <p>Ingrese su nombre: <input type="text" name="nonbre"></p>
+        <p>Ingrese su email: <input type="text" name="email"></p>
+        <p>Comentarios: </p>
+        <p>
+            <textarea rows="10" cols="40" name="comentario" autofocus></textarea>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

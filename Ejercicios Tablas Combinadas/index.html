@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Tablas Combinadas</title>
+</head>
+<body>
+    <!-- EJERCICIO 1-->
+    <table border="2px">
+        <tbody>
+            <tr>
+                <th rowspan="4">Recursos</th>
+                <th colspan="4">Facturación de los ultimos tres meses</th>
+            </tr>
+            <tr>
+                <td>Discos duros</td>
+                <td>2300</td>
+                <td>27200</td>
+                <td>26000</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>73000</td>
+                <td>67300</td>
+                <td>51000</td>
+            </tr>
+            <tr>
+                <td>Monitores</td>
+                <td>53000</td>
+                <td>72000</td>
+                <td>88000</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!-- EJERCICIO 2 -->
+    <table border="2px">
+        <tbody>
+            <tr>
+                <th rowspan="3">ESPAÑA</th>
+                <td>El Pais digital</td>
+                <td><a href="https://www.elpais.es">www.elpais.es</a></td>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td><a href="htpps://www.abc.es">www.abc.es</a></td>
+            </tr>
+            <tr>
+                <td>El Mundo</td>
+                <td><a href="https://www.elmundo.es">www.elmundo.es</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!-- EJERCICIO 3-->
+    <table border="2px">
+        <caption>Contenido del Libro</caption>
+        <thead>
+            <tr>
+                <th colspan="3">Capítulo</th>
+            </tr>
+            <tr>
+                <th>Capítulo</th>
+                <th>Título del Capítulo</th>
+                <th>Páginas</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>Introducción</td>
+                    <td>1-5</td>
+                </tr>
+                <tr>
+                    <td>Primeros pasos</td>
+                    <td>6-12</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">2</td>
+                    <td>Conceptos Básicos</td>
+                    <td>13-20</td>
+                </tr>
+                <tr>
+                    <td>Avanzado</td>
+                    <td>21-35</td> 
+                </tr>
+                <tr>
+                    <td>Ejemplos Básicos</td>
+                    <td>36-45</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Conclusiones</td>
+                    <td>46-50</td>
+                </tr>
+            </tbody>
+    </table>
+    <hr>
+
+    <!-- EJERCICIO 4-->
+    <table border="2px">
+        <thead>
+            <tr>
+                <td>Categoría</td>
+                <td>Etiquetas</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="5">Formulario</th>
+                <td>form</td>
+            </tr>
+            <tr>
+                <td>button</td>
+            </tr>
+            <tr>
+                <td>input</td>
+            </tr>
+            <tr>
+                <td>select</td>
+            </tr>
+            <tr>
+                <td>textarea</td>
+            </tr>
+            <tr>
+                <th rowspan="5">Tabla</th>
+                <td>table</td>
+            </tr>
+            <tr>
+                <td>tr</td>
+            </tr>
+            <tr>
+                <td>th</td>
+            </tr>
+            <tr>
+                <td>td</td>
+            </tr>
+            <tr>
+                <td>caption</td>
+            </tr>
+            <tr>
+                <th rowspan="6">Texto</th>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>em</td>
+            </tr>
+            <tr>
+                <td>i</td>
+            </tr>
+            <tr>
+                <td>strong</td>
+            </tr>
+            <tr>
+                <td>sub</td>
+            </tr>
+            <tr>
+                <td>sup</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!-- EJERCICIO 5 -->
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th>Horas Semanales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Programación</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Matemáticas</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Número total de cursos: 3</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+    <!-- EJERCICIO 6-->
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th colspan="2">Horario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Matemáticas</td>
+                <th>Día</th>
+                <th>Hora</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>9:00 - 10:30</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>9:00 - 10:30</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Física</td>
+                <th>Día</th>
+                <th>Hora</th>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>11:00 - 12:30</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>11:00 - 12:30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de cursos: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

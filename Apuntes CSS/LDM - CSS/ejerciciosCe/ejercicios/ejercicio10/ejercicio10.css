@@ -1,0 +1,43 @@
+.fila1 {
+  color: teal;
+}
+
+.fila2 {
+  color: red;
+}
+
+.fila3 {
+  color: blue;
+}
+
+.fila4 {
+  color: orange;
+}
+
+.fila5 {
+  color: purple;
+}
+
+.fila6 {
+  color: olive;
+}
+
+.fila7 {
+  color: fuchsia;
+}
+
+.fila8 {
+  color: green;
+}
+
+tr > td + td {
+  background-color: red;
+}
+
+tr > td + td + td {
+  background-color: green;
+}
+
+tr > td + td + td + td {
+  background-color: blue;
+}

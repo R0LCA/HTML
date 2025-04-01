@@ -1,0 +1,64 @@
+h1 {
+  width: 300px;
+  border: 3px solid;
+  border-color: blue;
+}
+
+p {
+  width: 300px;
+}
+
+.pregunta1,
+.pregunta2 {
+  font-weight: bold;
+  color: white;
+}
+
+.pregunta2 {
+  background-color: black;
+}
+
+.lista {
+  font-weight: bold;
+  color: red;
+}
+
+h1 + p {
+  background-color: gray;
+}
+
+.lista1 + p {
+  background-color: black;
+}
+
+#pasos {
+  background-color: cyan;
+}
+
+.verdadera {
+  color: green;
+}
+
+/* h1 p {
+  background-color: black;
+}
+
+ul li {
+  font-weight: bold;
+  color: red;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+}
+
+#pasos {
+  color: black;
+  background-color: cyan;
+}
+
+#pasos ul li {
+  color: black;
+} */

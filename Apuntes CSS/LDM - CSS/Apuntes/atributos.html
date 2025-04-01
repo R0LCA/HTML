@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tabla de Atributos CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #ac26dc61;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .example {
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      .bg-color {
+        background-color: lightblue;
+      }
+      .text-color {
+        color: red;
+      }
+      .border {
+        border: 2px solid black;
+      }
+      .padding {
+        padding: 20px;
+        background-color: lightgray;
+      }
+      .margin {
+        margin: 35px;
+        background-color: lightgreen;
+        display: inline-block;
+      }
+
+      code {
+        background-color: #e3f2fd;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: monospace;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Tabla de Atributos CSS</h2>
+    <table>
+      <tr>
+        <th>Atributo CSS</th>
+        <th>Descripción</th>
+        <th>Código</th>
+        <th>Ejemplo</th>
+      </tr>
+      <tr>
+        <td><code>background-color</code></td>
+        <td>Define el color de fondo de un elemento.</td>
+        <td><code>background-color: lightblue;</code></td>
+        <td><div class="example bg-color">Ejemplo</div></td>
+      </tr>
+      <tr>
+        <td><code>color</code></td>
+        <td>Establece el color del texto.</td>
+        <td><code>color: red;</code></td>
+        <td><div class="example text-color">Ejemplo</div></td>
+      </tr>
+      <tr>
+        <td><code>border</code></td>
+        <td>Define el borde de un elemento.</td>
+        <td><code>border: 2px solid black;</code></td>
+        <td><div class="example border">Ejemplo</div></td>
+      </tr>
+      <tr>
+        <td><code>padding</code></td>
+        <td>Define el espacio interno dentro de un elemento.</td>
+        <td><code>padding: 20px;</code></td>
+        <td><div class="example padding">Ejemplo</div></td>
+      </tr>
+      <tr>
+        <td><code>margin</code></td>
+        <td>Define el espacio exterior alrededor de un elemento.</td>
+        <td><code>margin: 35px;</code></td>
+        <td><div class="example margin">Ejemplo</div></td>
+      </tr>
+      <tr>
+        <td><code>font-family</code></td>
+        <td>
+          Define la familia de fuentes que se utilizará en el texto. Puedes
+          especificar varias fuentes como alternativas en caso de que la primera
+          no esté disponible.
+        </td>
+        <td><code>font-family: Arial, sans-serif;</code></td>
+        <td>
+          <div
+            class="example"
+            style="font-family: Arial, sans-serif"
+          >
+            Ejemplo
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><code>font-size</code></td>
+        <td>
+          Establece el tamaño de la fuente del texto. Puedes usar unidades como
+          px, em, rem, etc.
+        </td>
+        <td><code>font-size: 10px;</code></td>
+        <td>
+          <div
+            class="example"
+            style="font-size: 10px"
+          >
+            Ejemplo
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><code>line-height</code></td>
+        <td>
+          Define la altura de la línea de texto. Es útil para controlar el
+          espaciado entre líneas.
+        </td>
+        <td><code>line-height: 1.5;</code></td>
+        <td>
+          <div
+            class="example"
+            style="line-height: 1.5"
+          >
+            Ejemplo de texto
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

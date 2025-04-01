@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de inicio</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        .left h1 {
+            margin-left: 10px;
+        }
+        .center {
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            margin-left: 10px;
+        }
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        th, td {
+            vertical-align: top;
+        }
+        .precio {
+            font-weight: bold;
+            font-family: "Arial Black", "Impact", sans-serif;
+            font-size: 1.2em;
+            color: #2b8800;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html"><img src="logo.png" alt="LOGO NO DISPONIBLE" width="80"></a>
+        </div>
+        <div class="center">
+            <h2>Inicio</h2>
+        </div>
+        <nav>
+            <a href="presentacion.html">Presentacion</a>
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Tienda</a>
+            <a href="pagina2.html">Comparación</a>
+            <a href="pagina3.html">Presupuesto</a>
+            <a href="pagina4.html">Contacto</a>
+            <a href="pagina5.html">¿Quienes somos?</a>
+            <a href="pagina6.html">¿Donde estamos?</a>
+            <a href="pagina7.html">FAQ</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>OFERTAS ESPECIALES</h2>
+            <hr>    
+            <article>
+                <table>
+                    <tr> <!-- TITULOS PRODUCTOS -->
+                        <th>
+                            <a href="pagina1.html#oferta1" target="blank"><h4>MSI PRO B650 -S WIFI</h4></a>
+                        </th>
+                        <th>
+                            <a href="pagina1.html#oferta2" target="blank"><h4>Forgeon Arcanite ARGB Mesh</h4></a>
+                        </th>
+                        <th>
+                            <a href="pagina1.html#oferta3" target="blank"><h4>Corsair Vengeance DDR5 2X16 RGB</h4></a>
+                        </th>
+                    </tr>
+                    <tr> <!-- IMAGENES PRODUCTOS -->
+                        <td>
+                            <a href="pagina1.html#oferta1" target="blank"><img src="1684-msi-pro-b650-s-wifi.jpg" alt="msib650" width="300" height="300"></a>
+                        </td>
+                        <td>
+                            <a href="pagina1.html#oferta2" target="blank"><img src="cajaforgeon.jpg" alt="forgeon" width="300" height="300"></a>
+                        </td>
+                        <td>
+                            <a href="pagina1.html#oferta3" target="blank"><img src="152-corsair-vengeance-rgb-ddr5-4800mhz-32gb-2x16gb-cl30.jpg" alt="ramcorsair" width="300" height="300"></a>
+                        </td>
+                    </tr>
+                    <tr> <!-- PRECIOS PRODUCTOS -->
+                        <td class="precio"><p><s  style="color:red">200€</s> 160€</p></td>
+                        <td class="precio"><p><s  style="color:red">149€</s> 110€</p></td>
+                        <td class="precio"><p><s style="color:red">180€</s> 119,99€</p></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <a href="https://www.youtube.com/"><img src="youtube.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.instagram.com/"><img src="instagram.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.whatsapp.com/"><img src="was.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+            &nbsp;
+            <a href="https://www.twitter.com/"><img src="twitter.png" alt="ICONO NO DISPONIBLE" width="50"></a>
+        </p>
+    </footer>
+</body>
+</html>
